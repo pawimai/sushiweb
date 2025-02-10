@@ -1,24 +1,50 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap");
 
-*{
+@media (min-width: 769px) {
+    #member1, #member2, #member3, #member4, #member5{
+        flex-direction: row !important;
+        text-align: left;
+    }
+
+    .image {
+        margin-right: 20px;
+    }
+
+    .image img {
+        width: 120px;
+        height: 120px;
+    }
+
+    .mt-3 {
+        text-align: left;
+    }
+}
+
+@media (max-width: 532px){
+    .card_Container{
+        margin-bottom: 60%;
+    }
+}
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
 
-body{
+body {
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
 }
 
-.wrapper .title{
+.wrapper .title {
     text-align: center;
 }
 
-.title h4{
+.title h4 {
     color: #585757;
     font-size: 50px;
     letter-spacing: 1.2px;
@@ -30,23 +56,31 @@ body{
     word-wrap: break-word;
 }
 
-.wrapper .card_Container{
+.wrapper .card_Container {
     flex-wrap: wrap;
+    height: 100vh;
 }
 
-.card_Container .card{
+.card_Container .card {
     width: 250px;
     height: 250px;
     box-shadow: 0 30px 30px -20px rgba(0, 0, 0, 1),
-                inset 0 0 0 1000px rgba(67, 52, 109, .6);
+        inset 0 0 0 1000px rgba(67, 52, 109, .6);
+    cursor: pointer;
+    transition: transform 0.3s ease;
 }
 
-.card .imbBx, .imbBx img{
+.card_Container .card:hover {
+    transform: scale(1.05);
+}
+
+.card .imbBx,
+.imbBx img {
     width: 100%;
     height: 100%;
 }
 
-.card .content{
+.card .content {
     bottom: -160px;
     width: 100%;
     height: 160px;
@@ -58,12 +92,12 @@ body{
     transition-delay: 0.65s;
 }
 
-.card:hover .content{
+.card:hover .content {
     bottom: 0;
     transition-delay: 0s;
 }
 
-.content .contentBx h3{
+.content .contentBx h3 {
     text-transform: uppercase;
     letter-spacing: 2px;
     font-size: 18px;
@@ -75,7 +109,7 @@ body{
     transform: translateY(-20px);
 }
 
-.content .contentBx h4{
+.content .contentBx h4 {
     text-transform: uppercase;
     letter-spacing: 2px;
     font-size: 16px;
@@ -86,28 +120,28 @@ body{
     transform: translateY(-20px);
 }
 
-.card:hover .content .contentBx h3{
+.card:hover .content .contentBx h3 {
     opacity: 1;
     transform: translateY(0);
 }
 
-.card:hover .content .contentBx h4{
+.card:hover .content .contentBx h4 {
     opacity: 1;
     transform: translateY(0);
 }
 
-.content .contentBx h3 span{
+.content .contentBx h3 span {
     font-size: 12px;
     text-transform: initial;
 }
 
-.content .sci{
+.content .sci {
     bottom: 10px;
     width: 100%;
     margin: 0 0 0 120px;
 }
 
-.content .sci li{
+.content .sci li {
     list-style: none;
     transform: translateY(40px);
     transition: 0.5s;
@@ -115,12 +149,48 @@ body{
     transition-delay: calc(0.2s * var(--i));
 }
 
-.card:hover .content .sci li{
+.card:hover .content .sci li {
     transform: translateY(0);
     opacity: 1;
 }
 
-.content .sci li a{
+.content .sci li a {
     color: #fff;
     font-size: 24px;
+}
+
+.card .image {
+    position: relative;
+    width: 50%;
+    height: 50%;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+.image img {
+    width: 100%;
+    height: 100%;
+}
+
+.card h5{
+    font-size: 18px;
+    padding: 0 0 0 10%;
+    line-height: 3;
+}
+
+.card h2{
+    padding: 0 0 0 5%;
+}
+
+.back-to-top {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #6c5ce7;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: opacity 0.3s ease;
 }
