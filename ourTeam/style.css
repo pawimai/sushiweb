@@ -21,7 +21,7 @@
 }
 
 @media (max-width: 532px){
-    .card_Container{
+    .explain{
         margin-bottom: 200%;
     }
 }
@@ -58,6 +58,9 @@ body {
 
 .wrapper .card_Container {
     flex-wrap: wrap;
+}
+
+.explain{
     height: 100vh;
 }
 
