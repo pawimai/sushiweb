@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+
 
     <!--Font Awesome CDN-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
@@ -28,8 +28,7 @@
 
         <div class="card_Container position-relative d-flex justify-content-center pt-5">
 
-            <div 
-                class="card position-relative m-2 overflow-hidden rounded-4 d-flex justify-content-center align-items-center"
+            <div class="card position-relative m-2 overflow-hidden rounded-4 d-flex justify-content-center align-items-center"
                 onclick="showMember('member1')">
 
                 <div class="imbBx">
@@ -47,8 +46,7 @@
 
             </div>
 
-            <div
-                class="card position-relative m-2 overflow-hidden rounded-4 d-flex justify-content-center align-items-center"
+            <div class="card position-relative m-2 overflow-hidden rounded-4 d-flex justify-content-center align-items-center"
                 onclick="showMember('member2')">
 
                 <div class="imbBx">
@@ -71,8 +69,7 @@
 
             </div>
 
-            <div
-                class="card position-relative m-2 overflow-hidden rounded-4 d-flex justify-content-center align-items-center"
+            <div class="card position-relative m-2 overflow-hidden rounded-4 d-flex justify-content-center align-items-center"
                 onclick="showMember('member3')">
 
                 <div class="imbBx">
@@ -96,8 +93,7 @@
 
             </div>
 
-            <div
-                class="card position-relative m-2 overflow-hidden rounded-4 d-flex justify-content-center align-items-center"
+            <div class="card position-relative m-2 overflow-hidden rounded-4 d-flex justify-content-center align-items-center"
                 onclick="showMember('member4')">
 
                 <div class="imbBx">
@@ -120,8 +116,7 @@
 
             </div>
 
-            <div
-                class="card position-relative m-2 overflow-hidden rounded-4 d-flex justify-content-center align-items-center"
+            <div class="card position-relative m-2 overflow-hidden rounded-4 d-flex justify-content-center align-items-center"
                 onclick="showMember('member5')">
 
                 <div class="imbBx">
@@ -145,14 +140,39 @@
             </div>
         </div>
 
-        <div class="explain" >
-            <p  class="card d-flex flex-column align-items-center container rounded-4 my-3 shadow-lg p-4 border-0 mt-5" >
-                Jorjot คือแอปบันทึกรายรับรายจ่ายที่ใช้งานง่าย จัดหมวดหมู่ชัดเจน พร้อมกราฟสรุปการใช้จ่ายแบบรายเดือน รายปี และหมวดหมู่ สามารถคาดการณ์รายรับรายจ่ายในปีต่อไปจากพฤติกรรมการใช้จ่ายของผู้ใช้งานได้ มีชาเลนจ์ออมเงินและระบบ login stack ปลดล็อครูปโปรไฟล์ใหม่ เพื่อสร้างแรงจูงใจและช่วยฝึกนิสัยการออมเงิน
+        <div class="explain">
+            <p class="card d-flex flex-column align-items-center container rounded-4 my-3 shadow-lg p-4 border-0 mt-5">
+                Jorjot คือแอปบันทึกรายรับรายจ่ายที่ใช้งานง่าย จัดหมวดหมู่ชัดเจน พร้อมกราฟสรุปการใช้จ่ายแบบรายเดือน รายปี
+                และหมวดหมู่ สามารถคาดการณ์รายรับรายจ่ายในปีต่อไปจากพฤติกรรมการใช้จ่ายของผู้ใช้งานได้
+                มีชาเลนจ์ออมเงินและระบบ login stack ปลดล็อครูปโปรไฟล์ใหม่ เพื่อสร้างแรงจูงใจและช่วยฝึกนิสัยการออมเงิน
+                <br>feature :
+                <br>1. Pocket Category: จัดการรายรับ-รายจ่ายเป็นหมวดหมู่ให้ใช้งานง่ายขึ้น และมีการแยกกระเป๋า
+                <br>2. ภาพรวมรายเดือน/รายปี/หมวดหมู่: แสดงข้อมูลการเงินตามช่วงเวลาหรือตามหมวดหมู่เป็นกราฟ
+
+                <br>unique feature :
+                <br>1. Challenge เงินเหลือแต่ละเดือน
+                <br>&nbsp- ผู้ใช้สามารถตั้งเป้าหมายการออมเงินในแต่ละเดือน และรับรางวัลในรูปแบบการเลื่อนขั้น
+                <br>&nbsp- ช่วยสร้างแรงจูงใจในวางแผนการใช้จ่ายและการออมเงินอย่างต่อเนื่อง
+                <br>2. Login Stack
+                <br>&nbsp- login ทุกวัน และรับรางวัลในรูปแบบการปลดล็อคโปรไฟล์ใหม่
+                <br>&nbsp- ทำให้ผู้ใช้มีแรงจูงใจในการกลับมาใช้งานแอปจ๋อจดอย่างสม่ำเสมอ
+                <br>3. คาดการณ์เงินเก็บด้วย Machine Learning
+                <br>&nbsp- วิเคราะห์พฤติกรรมการใช้จ่ายของผู้ใช้ เพื่อคาดการณ์รายรับรายจ่ายในอนาคต
+                <br>&nbsp- ให้คำแนะนำเฉพาะบุคคล ช่วยวางแผนการเงินได้แม่นยำขึ้น
+                <a href="./figma.html">ดูเพิ่มเติม....</a>
             </p>
+            <div class="video-container">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/Nz3xJUCPj5E?si=U1kiNeStGOI8TAHz"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
         </div>
 
 
-        <div id="member1" class="card d-flex flex-column align-items-center container rounded-4 my-3 shadow-lg p-4 border-0" style="display: none;">
+        <div id="member1"
+            class="card d-flex flex-column align-items-center container rounded-4 my-3 shadow-lg p-4 border-0"
+            style="display: none;">
             <div class="image my-3">
                 <img src="./image/img_3.jpg" alt="" class="rounded-circle border border-light shadow">
             </div>
@@ -163,17 +183,20 @@
                     <strong class="fw-semibold">🆔 Student ID :</strong> 66011456 <br>
                     <strong class="fw-semibold">🎭 งานอดิเรก :</strong> 📖 อ่านนิยาย | 🎨 วาดรูป <br>
                     <strong class="fw-semibold">🎨 สีที่ชอบ :</strong> 💖 สีชมพู <br>
-                    <strong class="fw-semibold">🍽️ อาหารที่ชอบ :</strong> 🥒 แตงกวา | 🍓 สตรอเบอร์รี่ | 🍫 ช็อกโกแลต <br>
+                    <strong class="fw-semibold">🍽️ อาหารที่ชอบ :</strong> 🥒 แตงกวา | 🍓 สตรอเบอร์รี่ | 🍫 ช็อกโกแลต
+                    <br>
                     <strong class="fw-semibold">💻 สกิล :</strong> 🎨 Figma | 💻 HTML
                 </h5>
             </div>
         </div>
 
-        <div id="member2" class="card d-flex flex-column align-items-center container rounded-4 my-3 shadow-lg p-4 border-0" style="display: none;">
+        <div id="member2"
+            class="card d-flex flex-column align-items-center container rounded-4 my-3 shadow-lg p-4 border-0"
+            style="display: none;">
             <div class="image my-3">
                 <img src="./image/img_5.jpg" alt="" class="rounded-circle border border-light shadow">
             </div>
-            <div class="mt-3 w-100 text-start" >
+            <div class="mt-3 w-100 text-start">
                 <h2 class="fw-bold text-uppercase text-shadow">
                     <i class="fa-regular fa-heart fa-lg"></i>
                     <i class="fa-regular fa-heart fa-lg"></i>
@@ -184,19 +207,23 @@
                 <h5 class="mt-3 fw-light">
                     <strong class="fw-semibold">👤 ชื่อ :</strong> ณัฐณิชา ตั่นเล่ง <br>
                     <strong class="fw-semibold">🆔 Student ID :</strong> 66010233 <br>
-                    <strong class="fw-semibold">🎭 งานอดิเรก :</strong> 🎶 ฟังเพลง | 🎬 ดูหนัง | 🎨 วาดรูป | 🚶‍♀️ เดินเล่น <br>
+                    <strong class="fw-semibold">🎭 งานอดิเรก :</strong> 🎶 ฟังเพลง | 🎬 ดูหนัง | 🎨 วาดรูป | 🚶‍♀️
+                    เดินเล่น <br>
                     <strong class="fw-semibold">🎨 สีที่ชอบ :</strong> 💜 สีม่วง | สีเทา <br>
-                    <strong class="fw-semibold">🍽️ อาหารที่ชอบ :</strong> 🍣 แซลมอน | 🍜 ราเมง | 🌶️ หมาล่า | 🥕 แครอท <br>
+                    <strong class="fw-semibold">🍽️ อาหารที่ชอบ :</strong> 🍣 แซลมอน | 🍜 ราเมง | 🌶️ หมาล่า | 🥕 แครอท
+                    <br>
                     <strong class="fw-semibold">💻 สกิล :</strong> 🔣 C | 🔢 C++ | 🐍 Python | 🎮 GDScript
                 </h5>
             </div>
         </div>
 
-        <div id="member3" class="card d-flex flex-column align-items-center container rounded-4 my-3 shadow-lg p-4 border-0" style="display: none;">
+        <div id="member3"
+            class="card d-flex flex-column align-items-center container rounded-4 my-3 shadow-lg p-4 border-0"
+            style="display: none;">
             <div class="image my-3">
                 <img src="./image/img_4.jpg" alt="" class="rounded-circle border border-light shadow">
             </div>
-            <div class="mt-3 w-100 text-start" >
+            <div class="mt-3 w-100 text-start">
                 <h2 class="fw-bold text-uppercase text-shadow">
                     <i class="fa-regular fa-heart fa-lg"></i>
                     <i class="fa-regular fa-heart fa-lg"></i>
@@ -215,11 +242,13 @@
             </div>
         </div>
 
-        <div id="member4" class="card d-flex flex-column align-items-center container rounded-4 my-3 shadow-lg p-4 border-0" style="display: none;">
+        <div id="member4"
+            class="card d-flex flex-column align-items-center container rounded-4 my-3 shadow-lg p-4 border-0"
+            style="display: none;">
             <div class="image my-3">
                 <img src="./image/img_1.jpg" alt="" class="rounded-circle border border-light shadow">
             </div>
-            <div class="mt-3 w-100 text-start" >
+            <div class="mt-3 w-100 text-start">
                 <h2 class="fw-bold text-uppercase text-shadow">
                     <i class="fa-regular fa-heart fa-lg"></i>
                     <i class="fa-regular fa-heart fa-lg"></i>
@@ -230,19 +259,23 @@
                 <h5 class="mt-3 fw-light">
                     <strong class="fw-semibold">👤 ชื่อ :</strong> ปวิชญา อ่อนอำไพ <br>
                     <strong class="fw-semibold">🆔 Student ID :</strong> 66010474 <br>
-                    <strong class="fw-semibold">🎭 งานอดิเรก :</strong> 🎨 วาดรูป | 📖 อ่านการ์ตูน | 👻 ฟังเรื่องผี | 🎬 ดูอนิเมะ | 🍪 ทำขนม <br>
+                    <strong class="fw-semibold">🎭 งานอดิเรก :</strong> 🎨 วาดรูป | 📖 อ่านการ์ตูน | 👻 ฟังเรื่องผี | 🎬
+                    ดูอนิเมะ | 🍪 ทำขนม <br>
                     <strong class="fw-semibold">🎨 สีที่ชอบ :</strong> 💙 สีฟ้า | 💖 สีชมพู <br>
-                    <strong class="fw-semibold">🍽️ อาหารที่ชอบ :</strong> 🍜 อาหารประเภทเส้นทุกอย่างโดยเฉพาะก๋วยเตี๋ยว <br>
+                    <strong class="fw-semibold">🍽️ อาหารที่ชอบ :</strong> 🍜 อาหารประเภทเส้นทุกอย่างโดยเฉพาะก๋วยเตี๋ยว
+                    <br>
                     <strong class="fw-semibold">💻 สกิล :</strong> 🖥️ HTML | 🎨 CSS | 📝 JavaScript | 🔢 C | 🔣 C++
                 </h5>
             </div>
         </div>
 
-        <div id="member5" class="card d-flex flex-column align-items-center container rounded-4 my-3 shadow-lg p-4 border-0" style="display: none;">
+        <div id="member5"
+            class="card d-flex flex-column align-items-center container rounded-4 my-3 shadow-lg p-4 border-0"
+            style="display: none;">
             <div class="image my-3">
                 <img src="./image/img_2.jpg" alt="" class="rounded-circle border border-light shadow">
             </div>
-            <div class="mt-3 w-100 text-start" >
+            <div class="mt-3 w-100 text-start">
                 <h2 class="fw-bold text-uppercase text-shadow">
                     <i class="fa-regular fa-heart fa-lg"></i>
                     <i class="fa-regular fa-heart fa-lg"></i>
@@ -256,11 +289,12 @@
                     <strong class="fw-semibold">🎭 งานอดิเรก :</strong> 🎮 เล่นเกม | 📺 ดูซีรีส์ <br>
                     <strong class="fw-semibold">🎨 สีที่ชอบ :</strong> 🖤 สีดำ <br>
                     <strong class="fw-semibold">🍽️ อาหารที่ชอบ :</strong> 🍕 พิซซ่า <br>
-                    <strong class="fw-semibold">💻 สกิล :</strong> 🔣 C | 🔢 C++ | 🖥️ HTML | 🎨 CSS | 🐍 Python | 🎨 Figma
+                    <strong class="fw-semibold">💻 สกิล :</strong> 🔣 C | 🔢 C++ | 🖥️ HTML | 🎨 CSS | 🐍 Python | 🎨
+                    Figma
                 </h5>
             </div>
         </div>
-        
+
 
         <button class="back-to-top" onclick="scrollToTop()" style="display: none;">↑ Back to Top</button>
 
